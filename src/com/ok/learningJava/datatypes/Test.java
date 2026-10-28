@@ -2,11 +2,12 @@ package com.ok.learningJava.datatypes;
 
 public class Test {
     public static void main(String[] args){
-        int a = 1;
-        String str1 = "Hello";
-        String str2 = "Hello";
-        String str3 = new String("Hello");
-        System.out.println(str1 == str3);
-        System.out.println(str1.equals(str2));
+        int a = 5+3;
+        int b = 10-4;
+        int c = 6*7;
+        float d = 10/3.0f;
+        double e = 10.0/3.0;
+        System.out.println(d);
+
     }
 }
