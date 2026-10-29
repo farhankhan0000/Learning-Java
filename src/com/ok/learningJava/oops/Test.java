@@ -10,28 +10,22 @@ public class Test {
 }
 
 
-class Camera{
-    void capture(){
-        System.out.println("Phot clicking..");
-    }
-
-    void turnOn(){
-        System.out.println("turning on..");
-    }
+interface Mobile{
+    void makeCall();
 }
 
-class MusicPlayer{
-    void playMusic(){
-        System.out.println("Music playing..");
-    }
+interface MusicPlayer{
+    void playMusic();
 }
 
-class Phone{
-    void call(String number){
-        System.out.println("Calling.." + number);
+class SmartPhone implements Mobile, MusicPlayer{
+    @Override
+    public void makeCall(){
+        System.out.println("Making call....");
     }
-}
 
-class SmartPhone extends Camera{
-
+    @Override
+    public void playMusic(){
+        System.out.println("Playing music.....");
+    }
 }
